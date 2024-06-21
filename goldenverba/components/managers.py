@@ -23,6 +23,7 @@ from goldenverba.components.embedding.CohereEmbedder import CohereEmbedder
 from goldenverba.components.embedding.MiniLMEmbedder import MiniLMEmbedder
 from goldenverba.components.embedding.GoogleEmbedder import GoogleEmbedder
 from goldenverba.components.embedding.OllamaEmbedder import OllamaEmbedder
+from goldenverba.components.embedding.NBsBERTEmbedder import NBsBERTEmbedder
 
 from goldenverba.components.retriever.WindowRetriever import WindowRetriever
 
@@ -167,6 +168,7 @@ class EmbeddingManager:
         self.embedders: dict[str, Embedder] = {
             "GoogleEmbedder": GoogleEmbedder(),
             "MiniLMEmbedder": MiniLMEmbedder(),
+            "NBsBERTEmbedder": NBsBERTEmbedder(),
             "ADAEmbedder": ADAEmbedder(),
             "CohereEmbedder": CohereEmbedder(),
             "OllamaEmbedder": OllamaEmbedder(),

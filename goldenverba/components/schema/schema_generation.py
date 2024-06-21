@@ -8,9 +8,10 @@ load_dotenv()
 
 VECTORIZERS = {
     "text2vec-openai",
-    "text2vec-cohere",
+    # "text2vec-cohere",
 }  # Needs to match with Weaviate modules
-EMBEDDINGS = {"MiniLM", "OLLAMA"}  # Custom Vectors
+# EMBEDDINGS = {"MiniLM", "OLLAMA", "NBsBERTEmbedder"}  # Custom Vectors
+EMBEDDINGS = {"MiniLM", "OLLAMA", "NBsBERTEmbedder"}  # Custom Vectors
 
 google_project = os.getenv("GOOGLE_CLOUD_PROJECT")
 if google_project != None:
